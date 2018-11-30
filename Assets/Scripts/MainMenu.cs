@@ -3,23 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class StartScreenButton : MonoBehaviour
+public class MainMenu : MonoBehaviour
 {
-
-    // Use this for initialization
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
-    public void ChangeScene()
+    public void StartOption()
     {
         SceneManager.LoadScene("Main");
+    }
+    
+    public void QuitOption()
+    {
+        Debug.Log("Game Quit!");
+        Application.Quit();
     }
 }
